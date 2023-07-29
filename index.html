@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,24 @@
     <title>Clock</title>
     <link rel="stylesheet" href="./styleClock.css">
 </head>
+
 <body>
     <div class="screen-size flex-center flex-direction-column">
+        <nav class="navbar">
+            <h1 class="toggleBtn">
+                12
+                <label class="switch">
+                    <input type="checkbox" id="toggleBtn">
+                    <span class="slider round"></span>
+                </label>
+                24
+            </h1>
+        </nav>
         <p id="timeContainer" class="timeContainer flex-center round-corner showDepth">00 : 00 : 00</p>
+        <div class="date" id="dateToday"></div>
         <p class="authorCredit flex-center">&#169; Saurav Sanjay</p>
     </div>
 </body>
 <script src="./supportForClock.js"></script>
+
 </html>
