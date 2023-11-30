@@ -6,11 +6,10 @@ function callForCurrentTime() {
   toggleBtn.addEventListener("change", toogleFormat);
   var date = new Date();
   var timeFormat = getTimeFormat();
-  console.log(timeFormat);
   let hours = date.getHours();
   let minute = date.getMinutes();
   let second = date.getSeconds();
-  let month = whichMonth(date.getMonth());
+  let month = whichMonth(date.getMonth() + 1);
   let day = date.getDate().toString().padStart(2, "0");
   let meridiem = undefined;
   if (timeFormat === "12") {
